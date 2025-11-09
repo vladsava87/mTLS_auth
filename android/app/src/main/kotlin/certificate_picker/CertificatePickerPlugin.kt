@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Native Android plugin for Flutter that enables automatic certificate selection
- * for mutual TLS (mTLS) authentication using the mccann-api-auth-cert certificate.
+ * for mutual TLS (mTLS) authentication using certificates.
  */
 class CertificatePickerPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     private lateinit var channel: MethodChannel
@@ -441,9 +441,6 @@ class CertificatePickerPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
                 }
                 
                 val commonNames = listOf(
-                    "mccann-api-auth-cert",
-                    "mccann-api-auth", 
-                    "mccann",
                     "api-auth-cert",
                     "auth-cert",
                     "client-cert",
