@@ -20,7 +20,7 @@ mTLS_auth/
 │   │   ├── build.gradle
 │   │   └── src/main/
 │   │       ├── AndroidManifest.xml
-│   │       └── kotlin/com/steer73/mccann/
+│   │       └── kotlin/com/testapp/mtls_auth/
 │   │           ├── MainActivity.kt
 │   │           └── certificate_picker/
 │   │               └── CertificatePickerPlugin.kt
